@@ -110,13 +110,13 @@ class MenuItems{
         //lebih dari 100k diskon 10%, lebih dari 50k dapat 1 minuman
         if (totalCost >= 100000){
             System.out.println("Selamat anda mendapatkan diskon 10%: " + kursIndonesia.format(discount));
-            orderPay = totalCost - (totalCost * 0.1);
+            orderPay = totalCost - discount;
             System.out.println("Total pesanan yang harus dibayar: " + kursIndonesia.format(orderPay));
         } else if (totalCost >= 50000){
             System.out.println("Selamat anda mendapatkan 1 minuman gratis");
             orderPay = totalCost;
         } 
 
-}
+    }
 }
 
